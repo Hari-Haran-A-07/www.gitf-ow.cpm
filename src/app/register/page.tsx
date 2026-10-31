@@ -25,8 +25,10 @@ export default function RegisterPage() {
     setIsLoading(true);
     setTimeout(() => {
       updateUser({
-        name: name || 'Elena Rostova',
-        email: email || 'elena.rostova@gitflow.dev',
+        name: name || 'Hari Haran',
+        email: email || 'suryahari971@gmail.com',
+        avatarUrl: '/avatar.png',
+        githubUsername: 'Hari-Haran-A-07',
         role,
       });
       setIsLoading(false);
@@ -84,7 +86,7 @@ export default function RegisterPage() {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="Elena Rostova"
+                placeholder="Hari Haran"
                 className="w-full px-3.5 py-2.5 rounded-lg bg-bg-elevated border border-border text-white placeholder-text-dim focus:outline-none focus:border-git-orange text-xs"
               />
             </div>
@@ -96,7 +98,7 @@ export default function RegisterPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="elena@company.com"
+                placeholder="suryahari971@gmail.com"
                 className="w-full px-3.5 py-2.5 rounded-lg bg-bg-elevated border border-border text-white placeholder-text-dim focus:outline-none focus:border-git-orange text-xs"
               />
             </div>

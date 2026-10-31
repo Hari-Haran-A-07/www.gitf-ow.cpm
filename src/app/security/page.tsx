@@ -131,14 +131,14 @@ export default function SecurityCenterPage() {
               {
                 time: '2026-10-31 20:45:10 UTC',
                 event: 'OAuth Token Verified',
-                actor: 'alex.rivera@gitflow.dev',
+                actor: 'suryahari971@gmail.com',
                 ip: '198.51.100.42',
                 status: 'Success',
               },
               {
                 time: '2026-10-31 18:22:04 UTC',
                 event: 'AST Code Change Approved',
-                actor: 'alex.rivera@gitflow.dev',
+                actor: 'suryahari971@gmail.com',
                 ip: '198.51.100.42',
                 status: 'Success',
               },

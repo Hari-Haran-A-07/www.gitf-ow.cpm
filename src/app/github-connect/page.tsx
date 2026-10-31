@@ -87,9 +87,9 @@ export default function GitHubConnectPage() {
     setVerificationResult({
       success: true,
       user: {
-        login: 'alexrivera-dev',
-        name: 'Alex Rivera',
-        avatar_url: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=256&q=80',
+        login: 'Hari-Haran-A-07',
+        name: 'Hari Haran',
+        avatar_url: '/avatar.png',
         public_repos: 14,
         followers: 320,
       },
@@ -100,7 +100,7 @@ export default function GitHubConnectPage() {
     addRepository({
       name: repo.name,
       fullName: repo.full_name,
-      owner: repo.owner?.login || user.githubUsername || 'alexrivera-dev',
+      owner: repo.owner?.login || user.githubUsername || 'Hari-Haran-A-07',
       description: repo.description || 'Imported authorized GitHub repository',
       stars: repo.stargazers_count || 0,
       forks: repo.forks_count || 0,

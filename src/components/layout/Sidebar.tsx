@@ -36,7 +36,7 @@ import {
 
 export const Sidebar: React.FC = () => {
   const pathname = usePathname();
-  const { notifications, dailyTasks, workflows, engineA } = useGitFlow();
+  const { user, notifications, dailyTasks, workflows, engineA } = useGitFlow();
 
   const unreadCount = notifications.filter((n) => !n.read).length;
   const todayTask = dailyTasks.find((t) => t.dayNumber === 305);
@@ -185,12 +185,18 @@ export const Sidebar: React.FC = () => {
           href="/profile"
           className="flex items-center gap-3 p-2 rounded-lg hover:bg-bg-elevated transition-colors"
         >
-          <div className="w-8 h-8 rounded-full bg-git-orange/20 border border-git-orange/40 flex items-center justify-center font-bold text-xs text-git-orange">
-            AR
+          <div className="w-8 h-8 rounded-full overflow-hidden border border-border flex items-center justify-center">
+            {user.avatarUrl ? (
+              <img src={user.avatarUrl} alt={user.name} className="w-full h-full object-cover" />
+            ) : (
+              <span className="font-bold text-xs text-git-orange">HH</span>
+            )}
           </div>
           <div className="flex flex-col min-w-0">
-            <span className="text-xs font-medium text-white truncate">Alex Rivera</span>
-            <span className="text-[10px] font-mono text-brand-electric capitalize">Team Leader • Pro</span>
+            <span className="text-xs font-medium text-white truncate">{user.name}</span>
+            <span className="text-[10px] font-mono text-brand-electric capitalize">
+              {user.role.replace('_', ' ')} • {user.plan}
+            </span>
           </div>
         </Link>
       </div>

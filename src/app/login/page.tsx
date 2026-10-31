@@ -28,8 +28,10 @@ export default function LoginPage() {
     setIsLoading(true);
     setTimeout(() => {
       updateUser({
-        name: 'Alex Rivera',
-        email: 'alex.rivera@gitflow.dev',
+        name: 'Hari Haran',
+        email: 'suryahari971@gmail.com',
+        avatarUrl: '/avatar.png',
+        githubUsername: 'Hari-Haran-A-07',
         role: 'team_leader',
         plan: 'pro',
       });
@@ -77,7 +79,7 @@ export default function LoginPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="alex.rivera@gitflow.dev"
+                placeholder="suryahari971@gmail.com"
                 className="w-full px-3.5 py-2.5 rounded-lg bg-bg-elevated border border-border text-white placeholder-text-dim focus:outline-none focus:border-git-orange text-xs"
               />
             </div>

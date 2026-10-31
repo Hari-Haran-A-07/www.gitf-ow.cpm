@@ -26,7 +26,7 @@ export default function AIAssistantPage() {
   >([
     {
       sender: 'assistant',
-      text: 'Hello Alex! I am your Git Flow Autonomous AI Assistant. I have indexed the AST and dependency graphs across all 6 authorized repositories. How can I assist your engineering workflow today?',
+      text: 'Hello Hari! I am your Git Flow Autonomous AI Assistant. I have indexed the AST and dependency graphs across all 6 authorized repositories. How can I assist your engineering workflow today?',
     },
   ]);
 
